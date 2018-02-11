@@ -1,0 +1,50 @@
+.main {
+    height: 100%;
+    background: rgb(45, 0, 53);
+}
+
+.logo {
+    height: 90px;
+}
+
+.header {
+    background: darkorchid;
+    height: 100px;
+}
+
+.content-div{
+    padding-top: 60px;
+}
+
+.label {
+    color: rgb(239, 208, 248);
+}
+
+.btn-outline-primary {
+    color: rgb(239, 208, 248);
+    border-color: rgb(239, 208, 248);
+}
+
+.btn-outline-primary:hover {
+    background-color: darkorchid;
+}
+
+.btn-outline-primary.active, .btn-outline-primary:active {
+    background-color: darkorchid;
+}
+
+.jp-font {
+    font-family: Meiryo;
+}
+
+.padded {
+  padding: 10px;
+}
+
+.btn-big {
+  min-width: 75px;
+}
+
+.hr-color {
+  border-color: #351449;
+}

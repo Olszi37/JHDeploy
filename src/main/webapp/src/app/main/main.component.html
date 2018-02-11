@@ -1,0 +1,58 @@
+<div class="main">
+  <nav class="navbar navbar-light bg-faded header">
+    <a href="#">
+      <img class="logo float-left" src="/assets/img/logo.png" />
+    </a>
+  </nav>
+  <div class="container-fluid content-div">
+    <div class="row">
+      <div class="col-md-8">
+
+        <div class="row justify-content-center">
+          <div class="col-md-12 padded">
+            <h4 class="font-weight-bold text-center label">
+              Select your type
+            </h4>
+          </div>
+          <div class="col-md-12 padded text-center">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-primary btn-lg btn-big" [class.active]="isActive('HIRAGANA')">
+                <input type="radio" autocomplete="off" name="type" [(ngModel)]="type" [value]="'HIRAGANA'" #hiragana>
+                <span class="jp-font">
+                <strong>あ</strong>
+              </span>
+              </label>
+              <label class="btn btn-outline-primary btn-lg btn-big" [class.active]="isActive('KATAKANA')">
+                <input type="radio" autocomplete="off" name="type" [(ngModel)]="type" [value]="'KATAKANA'" #katakana>
+                <span class="jp-font">
+                <strong>ア</strong>
+              </span>
+              </label>
+              <label class="btn btn-outline-primary btn-lg btn-big" [class.active]="isActive('KANJI')">
+                <input type="radio" autocomplete="off" name="type" [(ngModel)]="type" [value]="'KANJI'" #kanji>
+                <span class="jp-font">
+                <strong>漢字</strong>
+              </span>
+              </label>
+              <label class="btn btn-outline-primary btn-lg btn-big" [class.active]="isActive('VOCABULARY')">
+                <input type="radio" autocomplete="off" name="type" [(ngModel)]="type" [value]="'VOCABULARY'" #vocabulary>
+                <span class="jp-font">
+                <strong>言葉</strong>
+              </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-color"/>
+        <div class="text-center justify-content-center">
+          <kana-options [type]="type" (onSelectLevel)="onLevelSelect($event)"></kana-options>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <app-stats [flashcardType]="type" [level]="'N5'"></app-stats>
+      </div>
+    </div>
+  </div>
+</div>

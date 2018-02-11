@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="liquibase/changelog/001-users.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/002-hiragana.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/003-katakana.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/004-kanji.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/005-vocabulary.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/006-hiragana_record.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/007-katakana_record.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/008-kanji_record.xml" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/009-vocabulary_record.xml" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>
